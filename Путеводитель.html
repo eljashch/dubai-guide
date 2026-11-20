@@ -352,6 +352,39 @@
     font-weight: 600;
     line-height: 1.05;
   }
+  .ov em {
+    display: block;
+    margin-top: 10px;
+    font-style: normal;
+    font-family: var(--serif);
+    font-size: 1.45rem;
+    font-weight: 600;
+    color: var(--navy);
+    line-height: 1;
+  }
+  .ov small { color: var(--muted); font-size: 12px; }
+  .day-price {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 8px 22px;
+    align-items: center;
+    background: var(--navy);
+    color: #F7F1E6;
+    border-radius: 22px;
+    padding: 16px 18px;
+    margin-bottom: 18px;
+  }
+  .day-price b {
+    display: block;
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: clamp(2rem, 4vw, 2.6rem);
+    line-height: .95;
+  }
+  .day-price span { color: var(--gold-2); }
+  .day-price ul { margin: 0; padding-left: 18px; }
+  .day-price li { margin: 3px 0; }
+  .chip.free { background: #E7F6EA; color: #1B6B38; }
   .ov:hover { transform: translateY(-3px); }
 
   .day-head { margin-bottom: 18px; }
@@ -423,6 +456,7 @@
   .chip.taxi { background: #FFF1DC; color: #8A5A12; }
   .chip.walk { background: #F3EEE6; color: #5C5146; }
   .chip.boat { background: #E7F0FA; color: #1A4E78; }
+  .chip.price { background: var(--navy); color: var(--gold-2); }
   .map {
     display: inline-flex;
     margin-top: 14px;
@@ -541,7 +575,7 @@
     font-size: .92rem;
   }
   @media (max-width: 900px) {
-    .hotel, .stop, .stop.reverse, .cafe, .receipt-wrap, .overview, .food-grid, .taxi-row, .totals, .pocket, .rails {
+    .hotel, .stop, .stop.reverse, .cafe, .receipt-wrap, .overview, .food-grid, .taxi-row, .totals, .pocket, .rails, .day-price {
       grid-template-columns: 1fr;
     }
     .stop.reverse .stop-photo { order: 0; }
@@ -688,19 +722,19 @@
       <div class="overview">
         <a class="ov" href="#day1">
           <img src="images/hero.jpg" alt="Бурдж-Халифа">
-          <div><span>День 1</span><strong>Башня, молл и море JBR</strong></div>
+          <div><span>День 1</span><strong>Башня, молл и море JBR</strong><em>214–229 AED</em><small>билет 189 + обед 25–40</small></div>
         </a>
         <a class="ov" href="#day2">
           <img src="images/fahidi.jpg" alt="Квартал Аль-Фахиди">
-          <div><span>День 2</span><strong>Старый город и рынки</strong></div>
+          <div><span>День 2</span><strong>Старый город и рынки</strong><em>6–13 AED</em><small>абра 1 + еда 5–12</small></div>
         </a>
         <a class="ov" href="#day3">
           <img src="images/kite.jpg" alt="Kite Beach">
-          <div><span>День 3</span><strong>Kite Beach и Марина</strong></div>
+          <div><span>День 3</span><strong>Kite Beach и Марина</strong><em>25–45 AED</em><small>входы бесплатно, это обед</small></div>
         </a>
         <a class="ov" href="#day4">
           <img src="images/frame.jpg" alt="Dubai Frame">
-          <div><span>День 4</span><strong>Рама, мечеть и парус</strong></div>
+          <div><span>День 4</span><strong>Рама, мечеть и парус</strong><em>120–135 AED</em><small>50 + 45 + обед 25–40</small></div>
         </a>
       </div>
     </div>
@@ -715,6 +749,14 @@
           <h2>Бурдж-Халифа, молл, фонтаны и пляж</h2>
           <p>Башня и фонтаны стоят в одном месте. Пляж JBR — в другой стороне города, у вашего трамвая.</p>
         </div>
+      </div>
+      <div class="day-price">
+        <div><b>214–229 AED</b><span>≈ 4&nbsp;810–5&nbsp;150 ₽ · билет и обед</span></div>
+        <ul>
+          <li>Смотровая 189 AED, фонтаны и пляж JBR бесплатно.</li>
+          <li>Обед в фуд-корте Dubai Mall 25–40 AED.</li>
+          <li>Метро и трамвай входят в общую карту на все дни: 130–150 AED.</li>
+        </ul>
       </div>
       <div class="flow">
         <strong>Как сложить день</strong>
@@ -732,6 +774,7 @@
               <p>Это центр города. От метро идите по крытому переходу в Dubai Mall, заложите 15–20 минут. Вход на смотровую — нижний этаж молла, таблички Lower Ground и At The Top.</p>
             </div>
             <div class="chips">
+              <span class="chip price">189 AED · ≈ 4&nbsp;250 ₽</span>
               <span class="chip red">Метро · красная · Burj Khalifa / Dubai Mall</span>
               <span class="chip red">Сторона Centrepoint</span>
             </div>
@@ -750,6 +793,7 @@
               <p>Пляжная полоса вдоль променада The Walk. От отеля пешком на трамвай Media City, выходите на JBR 1 или JBR 2. Море будет со стороны променада.</p>
             </div>
             <div class="chips">
+              <span class="chip free">Бесплатно</span>
               <span class="chip tram">Трамвай T1 · JBR 1 или JBR 2</span>
               <span class="chip walk">Дальше пешком по The Walk</span>
             </div>
@@ -767,6 +811,7 @@
               <p>Фонтан у подножия Бурдж-Халифы, рядом с Dubai Mall. Бесплатная точка с видом — терраса Souk Al Bahar. Это тот же район, что и смотровая: останьтесь к вечеру или вернитесь сюда, а не езжайте «после JBR» как на новую точку.</p>
             </div>
             <div class="chips">
+              <span class="chip free">Бесплатно</span>
               <span class="chip red">Та же станция Burj Khalifa / Dubai Mall</span>
               <span class="chip walk">Терраса Souk Al Bahar</span>
             </div>
@@ -788,6 +833,14 @@
           <p>Один ручей, два берега. Квартал и набережная — на вашей стороне, рынки — за лодкой.</p>
         </div>
       </div>
+      <div class="day-price">
+        <div><b>6–13 AED</b><span>≈ 130–290 ₽ · абра и перекус</span></div>
+        <ul>
+          <li>Квартал и Al Seef бесплатно. Абра 1 AED.</li>
+          <li>Шаурма или самса на рынке 5–12 AED.</li>
+          <li>Метро входит в общую карту на все дни: 130–150 AED.</li>
+        </ul>
+      </div>
       <div class="flow">
         <strong>Как сложить день</strong>
         <p>Красная линия до BurJuman, пересадка на зелёную в сторону e&amp;. Выходите на следующей станции — Sharaf DG. По указателям идите в исторический район Аль-Фахиди. Рынки в Дейре — через абру за 1 AED. Al Seef идите пешком до лодки или после возвращения: набережная на той же стороне, что и квартал.</p>
@@ -804,6 +857,7 @@
               <p>Станция метро Sharaf DG на зелёной линии. На схемах и в разговоре её ещё называют Al Fahidi. Выходите и следуйте указателям к историческому району: узкие улочки и башни-ветроуловители.</p>
             </div>
             <div class="chips">
+              <span class="chip free">Бесплатно</span>
               <span class="chip green">Зелёная · Sharaf DG (Al Fahidi)</span>
               <span class="chip green">От BurJuman в сторону e&amp;</span>
             </div>
@@ -821,6 +875,8 @@
               <p>После квартала дойдите до пристани абры. Лодка за 1 AED пересекает ручей и высаживает у рынков Дейры. Это короткий и живописный путь. Если лодку пропустите, запасной ход — та же зелёная линия дальше, до станции Gold Souq.</p>
             </div>
             <div class="chips">
+              <span class="chip price">Абра 1 AED · ≈ 22 ₽</span>
+              <span class="chip price">Еда 5–12 AED</span>
               <span class="chip boat">Абра · 1 AED</span>
               <span class="chip walk">Пристань у Аль-Фахиди</span>
             </div>
@@ -838,6 +894,7 @@
               <p>Современная набережная рядом с Аль-Фахиди, вдоль того же ручья. Идите пешком по берегу. На сторону Дейры за ней ехать не нужно.</p>
             </div>
             <div class="chips">
+              <span class="chip free">Бесплатно</span>
               <span class="chip walk">Пешком от Аль-Фахиди</span>
             </div>
             <a class="map" href="https://www.google.com/maps/search/?api=1&amp;query=Al+Seef+Dubai" target="_blank" rel="noopener">Карта</a>
@@ -858,6 +915,14 @@
           <p>Два разных выезда. Пляж — на такси, яхты — на вашем трамвае.</p>
         </div>
       </div>
+      <div class="day-price">
+        <div><b>25–45 AED</b><span>≈ 560–1&nbsp;010 ₽ · только обед</span></div>
+        <ul>
+          <li>Kite Beach и Марина бесплатно.</li>
+          <li>Обед в Ravi 25–45 AED. Фалафель в JBR дешевле: 12–16.5 AED.</li>
+          <li>Такси на пляж в эту сумму не входит: цену смотрите в приложении.</li>
+        </ul>
+      </div>
       <div class="flow">
         <strong>Как сложить день</strong>
         <p>Марину и JBR удобно смотреть от отеля на трамвае. Kite Beach стоит дальше по побережью, у Umm Suqeim: прямого метро нет, берите такси. Ravi Restaurant — в районе Al Satwa, это третий адрес. Если не хотите отдельный крюк, обед замените на Operation: Falafel в JBR.</p>
@@ -875,7 +940,7 @@
               <p>Пляж за торговым центром Saga World. Ориентир — большая парковка рядом с мечетью Al Manara Mosque. Скажите водителю: Kite Beach, Al Manara Mosque.</p>
             </div>
             <div class="alert"><strong>На метро сюда не доехать.</strong> Этот пляж заложен как поездка на такси.</div>
-            <div class="chips"><span class="chip taxi">Такси · Umm Suqeim, Al Manara</span></div>
+            <div class="chips"><span class="chip free">Вход бесплатно</span><span class="chip taxi">Такси · Umm Suqeim, Al Manara</span></div>
             <a class="map" href="https://www.google.com/maps/search/?api=1&amp;query=Kite+Beach+Umm+Suqeim+Dubai" target="_blank" rel="noopener">Карта</a>
           </div>
         </article>
@@ -890,6 +955,7 @@
               <p>Трамвай до Dubai Marina Mall или до JBR 1 / JBR 2. От станций начинается Marina Walk — пешеходная дорожка вдоль канала с яхтами.</p>
             </div>
             <div class="chips">
+              <span class="chip free">Бесплатно</span>
               <span class="chip tram">Трамвай · Dubai Marina Mall</span>
               <span class="chip tram">или JBR 1 / JBR 2</span>
               <span class="chip walk">Дальше Marina Walk</span>
@@ -912,6 +978,14 @@
           <p>Сначала парк Заабиль на метро. Мечеть и пляж стоят на одной дороге — их соединяет одно такси.</p>
         </div>
       </div>
+      <div class="day-price">
+        <div><b>120–135 AED</b><span>≈ 2&nbsp;700–3&nbsp;040 ₽ · билеты и обед</span></div>
+        <ul>
+          <li>Dubai Frame 50 AED, мечеть 45 AED, пляж бесплатно.</li>
+          <li>Обед в кафе 25–40 AED.</li>
+          <li>Такси к мечети и пляжу в эту сумму не входит.</li>
+        </ul>
+      </div>
       <div class="flow">
         <strong>Как сложить день</strong>
         <p>Утром красная линия в сторону Centrepoint до станции max. Вход в Dubai Frame только через Gate 4. Затем такси на Jumeirah Beach Road: сначала мечеть напротив Palm Strip Mall, потом общественный пляж у Burj Al Arab. Это другой пляж, не Kite Beach из третьего дня.</p>
@@ -930,6 +1004,7 @@
               <p>Метро, красная линия, станция max — бывшая Al Jafiliya. От станции до Gate 4 пешком около 15–20 минут или короткое такси. Водителю: Dubai Frame, Zabeel Park, Gate 4.</p>
             </div>
             <div class="chips">
+              <span class="chip price">50 AED · ≈ 1&nbsp;125 ₽</span>
               <span class="chip red">Красная · max (Al Jafiliya)</span>
               <span class="chip walk">15–20 мин до Gate 4</span>
             </div>
@@ -948,6 +1023,7 @@
               <p>Мечеть на главной дороге Jumeirah Beach Road, напротив торгового центра Palm Strip Mall. Ближайшее метро — World Trade Centre, от него около 20 минут пешком. Проще доехать на такси прямо к мечети.</p>
             </div>
             <div class="chips">
+              <span class="chip price">45 AED · ≈ 1&nbsp;010 ₽</span>
               <span class="chip taxi">Такси · Jumeirah Mosque</span>
               <span class="chip red">Метро World Trade Centre + 20 мин</span>
             </div>
@@ -966,6 +1042,7 @@
               <p>Общественный пляж сразу у отеля Burj Al Arab, на той же прибрежной линии Jumeirah Beach Road. Парус видно с песка. Сюда удобно заехать после мечети.</p>
             </div>
             <div class="chips">
+              <span class="chip free">Бесплатно</span>
               <span class="chip taxi">Такси по Jumeirah Beach Road</span>
               <span class="chip walk">Рядом с Burj Al Arab</span>
             </div>
@@ -1171,7 +1248,7 @@
             <li>Смотровая: Lower Ground, Dubai Mall.</li>
             <li>Фонтаны вечером с террасы Souk Al Bahar.</li>
             <li>Пляж отдельно: трамвай JBR 1 или JBR 2.</li>
-            <li>Обед в молле, 25–40 AED.</li>
+            <li>На день: 214–229 AED, обед в молле 25–40 AED.</li>
           </ul>
         </article>
         <article>
@@ -1181,7 +1258,7 @@
             <li>BurJuman, зелёная в сторону e&amp;, станция Sharaf DG.</li>
             <li>Абра 1 AED на рынки Дейры.</li>
             <li>Al Seef пешком вдоль ручья у Аль-Фахиди.</li>
-            <li>Перекус на рынке, 5–12 AED.</li>
+            <li>На день: 6–13 AED. Перекус на рынке 5–12 AED.</li>
           </ul>
         </article>
         <article>
@@ -1190,7 +1267,7 @@
           <ul>
             <li>Такси: Kite Beach, мечеть Al Manara.</li>
             <li>Трамвай: Dubai Marina Mall или JBR, дальше Marina Walk.</li>
-            <li>Обед в Ravi, Al Satwa, 25–45 AED, или фалафель в JBR.</li>
+            <li>На день: 25–45 AED. Обед в Ravi или фалафель в JBR дешевле.</li>
           </ul>
         </article>
         <article>
@@ -1200,7 +1277,7 @@
             <li>Красная линия до max, вход Gate 4.</li>
             <li>Такси: Jumeirah Mosque, напротив Palm Strip Mall.</li>
             <li>Пляж у Burj Al Arab.</li>
-            <li>Обед в кафе, 25–40 AED.</li>
+            <li>На день: 120–135 AED. Обед в кафе 25–40 AED.</li>
           </ul>
         </article>
       </div>
