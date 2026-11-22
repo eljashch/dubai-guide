@@ -203,7 +203,23 @@
   .block { padding: 72px 0; }
   .sec-head { max-width: 40rem; margin-bottom: 28px; }
   .sec-head h2, .day-head h2 { font-size: clamp(2.4rem, 5vw, 4rem); }
-  .sec-head p, .flow p, .find p, .note p { margin: 0; }
+  .sec-head p, .flow p, .find p, .note p, .hint p { margin: 0; }
+  .hint {
+    margin: 14px 0 0;
+    padding: 12px 14px;
+    border-radius: 16px;
+    background: #FBF6EC;
+    border: 1px solid #E7D7B4;
+  }
+  .hint strong {
+    display: block;
+    margin-bottom: 4px;
+    font-family: "Unbounded", sans-serif;
+    font-size: 11px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
   .sec-head p { margin-top: 10px; color: var(--muted); font-size: 1.05rem; }
 
   .hotel {
@@ -802,6 +818,10 @@
         <strong>Весь день одной линией</strong>
         <p>Аэропорт → Media One → магазин у отеля → метро Al Khail → DMCC → трамвай → Marina Mall → яхта → пешком на JBR → отель и заселение → Marina Walk и магазин у Sobha Realty → ужин в Ciao Bella → метро до Burj Khalifa → фонтаны → метро до Al Khail.</p>
       </div>
+      <div class="hint">
+        <strong>Подсказка</strong>
+        <p>День после ночного рейса длинный. Если прилёт сдвинется или не выспитесь в самолёте, короче сделайте купание на JBR. Яхту и вечерние фонтаны оставляйте: слот на воду уже выбран, фонтаны идут как раз вечером.</p>
+      </div>
 
       <div class="stops">
         <article class="stop">
@@ -1078,6 +1098,10 @@
               <strong>Как ехать</strong>
               <p>В 10:00 пешком 5–7 минут до метро Al Khail / Al Fardan Exchange. Красная линия в сторону Life Pharmacy или Expo, одна остановка — Sobha Realty (раньше Dubai Marina). Оттуда переход на трамвай. Садитесь на T1 в сторону Palm Jumeirah: по пути будут Dubai Marina Mall и Media City. Если мост от метро вывел сразу на трамвай Dubai Marina, на JLT возвращаться не нужно — нужная остановка та же, Palm Jumeirah. Весь путь 45–55 минут, карта Nol $2–4 (≈ 160–320 ₽).</p>
             </div>
+            <div class="hint">
+              <strong>Подсказка</strong>
+              <p>На табло трамвая смотрите конечную Palm Jumeirah. Остановка Dubai Marina у моста с Sobha Realty — это уже нужная линия, обратно на JLT не идите.</p>
+            </div>
             <div class="map-card">
               <ol class="schematic">
                 <li><b>Media One</b><small>пешком до Al Khail</small></li>
@@ -1116,6 +1140,10 @@
             <div class="find">
               <strong>Как найти и какой билет брать</strong>
               <p>Смотровая на 52-м этаже Palm Tower, сразу у станции монорельса Nakheel Mall. Берите непиковый слот Non-Prime: обычно с 09:00 до 16:00 (в части систем бронирования до 15:30) и после 19:00. Ориентир $22–27 (≈ 1 760–2 160 ₽). Билет лучше купить онлайн заранее.</p>
+            </div>
+            <div class="hint">
+              <strong>Подсказка</strong>
+              <p>До смотровой как раз 45–55 минут, а в маршруте вход стоит на 11:30. Одна пропущенная трамвайная подача сдвигает вас позже брони. Берите Non-Prime ближе к 12:00: это всё ещё непиковые часы.</p>
             </div>
             <div class="chips">
               <span class="chip price">$22–27 · Non-Prime</span>
@@ -1185,6 +1213,10 @@
               </div>
             </div>
             <p class="day-note">16:15–17:45 отдых в номере. 17:45–18:45 бассейн отеля. 18:45–19:15 ужин в отеле.</p>
+            <div class="hint">
+              <strong>Подсказка</strong>
+              <p>23 декабря закат около 17:35. Бассейн в 17:45 — уже вечернее купание при свете отеля. Солнечный бассейн стоит утром 25 декабря, с 09:30.</p>
+            </div>
           </div>
         </article>
 
@@ -1323,6 +1355,10 @@
             <div class="find">
               <strong>Обратно, 13:30–13:50</strong>
               <p>С причала Al Sabkha на сторону Bur Dubai, причал Dubai Old Souq. Та же лодка и тот же маршрут в обратную сторону. Ещё 1 AED наличными. Вместе туда и обратно $0.54 (≈ 43 ₽).</p>
+            </div>
+            <div class="hint">
+              <strong>Подсказка</strong>
+              <p>Это самая узкая стыковка поездки. Мелочь на две абры, по 1 AED, держите заранее. После обратной лодки в 13:50 сразу идите к Sharaf DG: метро на канал начинается в 14:00. Если задержаться в Дейре, сдвинется набережная. Утром на зелёной линии только сторона e&amp;.</p>
             </div>
             <a class="map" href="https://www.google.com/maps/dir/?api=1&amp;origin=Al+Sabkha+Abra+Station,+Deira,+Dubai&amp;destination=Dubai+Old+Souq+Abra+Station&amp;travelmode=transit" target="_blank" rel="noopener">Маршрут обратно: Al Sabkha → Bur Dubai</a>
           </div>
@@ -1548,7 +1584,11 @@
             </div>
             <div class="find">
               <strong>Dubai Garden Glow, 17:30–19:00</strong>
-              <p>Адрес: Zabeel Park, Gate 3, Area A, рядом с Dubai Frame. В декабре парк обычно работает с 16:00 до 23:00, по пятницам дольше. 25 декабря — пятница, так что вечер длиннее обычного. Вы заходите после заката, когда подсветка уже горит. Билет около 63 AED (≈ $17 / 1 360 ₽): это вход в Glow Park и Dinosaur Park. Внутри миллион LED-ламп, светящиеся тоннели, динозавры и фотозоны.</p>
+              <p>Адрес: Zabeel Park, Gate 3, Area A, рядом с Dubai Frame. Билет около 63 AED (≈ $17 / 1 360 ₽): это вход в Glow Park и Dinosaur Park. Внутри миллион LED-ламп, светящиеся тоннели, динозавры и фотозоны.</p>
+            </div>
+            <div class="hint">
+              <strong>Подсказка</strong>
+              <p>Закат 25 декабря около 17:35, поэтому в 17:30 ещё сумерки. Ровная подсветка ближе к 18:00, и кофе с 16:30 как раз на это ожидание. На сайте парка сейчас часы 16:00–21:00 каждый день, отдельного длинного вечера в пятницу нет. Ваш заход до 19:00 в эти часы входит. Перед покупкой откройте dubaigardenglow.com. В раму идут через Gate 4, в огни — через Gate 3.</p>
             </div>
             <div class="map-card">
               <ol class="schematic">
@@ -1784,7 +1824,7 @@
           <ul>
             <li>Отель: Media One, Al Falak St. Метро Al Khail / Al Fardan Exchange, 5–7 мин.</li>
             <li>Утро: Bake Mart, потом метро до DMCC (2-я остановка) и трамвай до Marina Mall.</li>
-            <li>Завтрак Le Pain Quotidien, яхта 1 час, пешком на пляж JBR.</li>
+            <li>Завтрак Le Pain Quotidien, яхта 1 час, пешком на пляж JBR. Если день приезда собьётся, короче сделайте JBR.</li>
             <li>Вечером ужин в Ciao Bella, метро в сторону Centrepoint до башни, фонтаны бесплатно. Наверх не идём.</li>
             <li>На человека $50–64, без трансфера и без ужина в отеле.</li>
           </ul>
@@ -1794,8 +1834,8 @@
           <h3>23 декабря</h3>
           <ul>
             <li>Al Khail → Sobha Realty → трамвай до Palm Jumeirah → монорельс до Nakheel Mall.</li>
-            <li>The View, слот Non-Prime. Дальше The Pointe и бесплатное лобби Atlantis.</li>
-            <li>Вечером бассейн, ужин в отеле и Media City Park.</li>
+            <li>The View, слот Non-Prime ближе к 12:00. Дальше The Pointe и бесплатное лобби Atlantis.</li>
+            <li>Вечером бассейн уже после заката, ужин в отеле и Media City Park.</li>
             <li>На человека $36–50, без обеда и без ужина в отеле.</li>
           </ul>
         </article>
@@ -1804,7 +1844,7 @@
           <h3>24 декабря</h3>
           <ul>
             <li>Al Khail → BurJuman → зелёная в сторону e&amp;, станция Sharaf DG.</li>
-            <li>Аль-Фахиди бесплатно. Абра в Дейру и обратно, 1 AED наличными в каждую сторону.</li>
+            <li>Аль-Фахиди бесплатно. Абра в Дейру и обратно, 1 AED наличными в каждую сторону. После лодки сразу к метро: канал с 14:00.</li>
             <li>Потом Business Bay и бесплатная набережная канала. Вечером такси до JBR и пешком на Bluewaters.</li>
             <li>На человека $13.5–22.5, без обеда в Дейре и без ужина в отеле.</li>
           </ul>
@@ -1814,7 +1854,7 @@
           <h3>25 декабря</h3>
           <ul>
             <li>Утром бассейн на крыше. Затем Al Khail → max, пешком до Dubai Frame, Gate 4.</li>
-            <li>Такси на пляж La Mer и обратно к Gate 3, Dubai Garden Glow.</li>
+            <li>Такси на пляж La Mer и обратно к Gate 3, Dubai Garden Glow. В огни ближе к 18:00, на сайте часы 16:00–21:00.</li>
             <li>Домой с max красной линией в сторону Expo до Al Khail. Ужин в отеле в 20:00.</li>
             <li>На человека $52.6–62.6, без обеда на пляже.</li>
           </ul>
