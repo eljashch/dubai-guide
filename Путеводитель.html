@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Дубай за четыре дня — гид из Arjaan Media City</title>
-<meta name="description" content="Личный путеводитель на 4 дня из отеля Arjaan by Rotana, Dubai Media City: как добраться, где смотреть и сколько заложить.">
+<title>Дубай из Media One Hotel — гид на 22 декабря</title>
+<meta name="description" content="Гид из Media One Hotel, Dubai Media City: день прилёта 22 декабря и следующие дни.">
 <meta name="theme-color" content="#10233F">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -566,6 +566,49 @@
   .pocket h3 { font-size: 2rem; margin: 4px 0 8px; }
   .pocket ul { margin: 0; padding-left: 18px; }
   .pocket li { margin: 4px 0; }
+  .when {
+    font-family: var(--display);
+    font-size: 12px;
+    letter-spacing: .06em;
+    color: var(--gold);
+    margin: 0 0 6px;
+  }
+  .map-card {
+    display: grid;
+    grid-template-columns: .92fr 1.08fr;
+    margin-top: 14px;
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    overflow: hidden;
+    background: #fff;
+  }
+  .schematic { list-style: none; margin: 0; padding: 14px 16px 12px; }
+  .schematic li { position: relative; padding: 0 0 12px 22px; }
+  .schematic li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--gold);
+  }
+  .schematic li::after {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 18px;
+    bottom: -2px;
+    width: 2px;
+    background: rgba(184, 137, 74, .45);
+  }
+  .schematic li:last-child { padding-bottom: 0; }
+  .schematic li:last-child::after { display: none; }
+  .schematic b { display: block; }
+  .schematic small { color: var(--muted); }
+  .map-frame iframe { width: 100%; height: 230px; border: 0; display: block; background: #d9e4ea; }
+  .map-frame .map { margin: 10px 12px 12px; }
   footer {
     position: relative;
     z-index: 1;
@@ -575,7 +618,7 @@
     font-size: .92rem;
   }
   @media (max-width: 900px) {
-    .hotel, .stop, .stop.reverse, .cafe, .receipt-wrap, .overview, .food-grid, .taxi-row, .totals, .pocket, .rails, .day-price {
+    .hotel, .stop, .stop.reverse, .cafe, .receipt-wrap, .overview, .food-grid, .taxi-row, .totals, .pocket, .rails, .day-price, .map-card {
       grid-template-columns: 1fr;
     }
     .stop.reverse .stop-photo { order: 0; }
@@ -620,16 +663,16 @@
 
 <main id="content">
   <section class="hero" id="top">
-    <img src="images/hero.jpg" alt="Иллюстрация: Бурдж-Халифа и фонтаны на закате">
+    <img src="images/yacht.jpg" alt="Яхта выходит из Марины к колесу Ain Dubai">
     <div class="hero-shade"></div>
     <div class="hero-copy">
-      <p class="eyebrow">Личный гид · 1 человек</p>
-      <h1>Дубай<br><em>за четыре дня</em></h1>
-      <p class="lede">Вы живёте в Arjaan by Rotana, Dubai Media City. Ниже — куда ехать, на чём, и как понять, что вы на месте. Завтрак и ужин в отеле, на улице только обед.</p>
+      <p class="eyebrow">22 декабря · день прилёта</p>
+      <h1>Дубай<br><em>из Media One</em></h1>
+      <p class="lede">Отель стоит в Dubai Media City, на Al Falak Street. До метро 5–7 минут пешком. Станция на схемах может называться Al Khail или Al Fardan Exchange — это одна и та же остановка, код R35.</p>
       <ul class="facts">
-        <li><b>Трамвай у порога</b><span>станция Media City</span></li>
-        <li><b>В центр через JLT</b><span>метро DMCC, красная линия</span></li>
-        <li><b>495–572 AED</b><span>экономный вариант на человека</span></li>
+        <li><b>Media One Hotel</b><span>Al Falak St, выход 32</span></li>
+        <li><b>Метро R35</b><span>Al Khail / Al Fardan Exchange</span></li>
+        <li><b>День 1 · $50–64</b><span>≈ 4 000–5 120 ₽ на человека</span></li>
       </ul>
     </div>
   </section>
@@ -638,19 +681,19 @@
     <div class="wrap hotel">
       <div class="hotel-copy">
         <p class="kicker">Ваша точка</p>
-        <h2>Arjaan by Rotana</h2>
-        <p class="en">Dubai Media City</p>
-        <p class="addr">King Salman Bin Abdulaziz Al Saud St, Al Sufouh 2, Dubai, UAE.<strong>Ориентир: район Dubai Media City, рядом со зданием MBC.</strong></p>
-        <p>До трамвайной станции Media City — несколько минут пешком. Это главная точка, из которой начинается почти каждый день.</p>
+        <h2>Media One Hotel</h2>
+        <p class="en">Media 1 Tower, Dubai Media City</p>
+        <p class="addr">Media 1 Tower — Al Falak St — Exit 32 — Dubai Media City — Dubai — UAE.<strong>Багаж утром можно оставить в камере хранения, заселение после пляжа.</strong></p>
+        <p>Пешком 5–7 минут до метро. На вывесках ищите Al Khail или новое имя Al Fardan Exchange. В сторону моря (Life Pharmacy / Expo) через одну остановку будет Sobha Realty, ещё через одну — DMCC и трамвай. В сторону Centrepoint — центр города, Бурдж-Халифа и старый Дубай.</p>
         <div class="show-driver" lang="en">
           <span>Покажите таксисту</span>
-          <p>Arjaan by Rotana<br>Dubai Media City</p>
-          <small>King Salman Bin Abdulaziz Al Saud St, Al Sufouh 2. Near MBC.</small>
+          <p>Media One Hotel<br>Dubai Media City</p>
+          <small>Media 1 Tower, Al Falak Street, Exit 32.</small>
         </div>
-        <a class="map" href="https://www.google.com/maps/search/?api=1&amp;query=Arjaan+by+Rotana+Dubai+Media+City" target="_blank" rel="noopener">Открыть отель на карте</a>
+        <a class="map" href="https://www.google.com/maps/search/?api=1&amp;query=Media+One+Hotel+Al+Falak+Street+Dubai+Media+City" target="_blank" rel="noopener">Открыть отель на карте</a>
       </div>
       <div class="hotel-photo">
-        <img src="images/tram.jpg" alt="Иллюстрация: трамвай среди башен Media City">
+        <img src="images/hotel.jpg" alt="Стеклянная башня отеля в Dubai Media City">
       </div>
     </div>
   </section>
@@ -659,61 +702,58 @@
     <div class="wrap">
       <div class="sec-head">
         <p class="kicker">Как двигаться</p>
-        <h2>Сначала трамвай, в город — с JLT</h2>
-        <p>Трамвай связывает отель с пляжем JBR и Мариной. Чтобы попасть в центр или в старый город, доезжайте до JLT и переходите на красную линию метро, станция DMCC.</p>
+        <h2>Дом — это метро Al Khail</h2>
+        <p>От Media One Hotel вы каждый раз выходите к одной станции. На табло она может быть подписана Al Fardan Exchange. Код R35. Al Khail — её прежнее имя.</p>
       </div>
       <div class="rails">
-        <article class="rail">
-          <div class="rail-label"><span>T1</span> Трамвай</div>
+        <article class="rail red">
+          <div class="rail-label"><span aria-hidden="true"></span> К морю · Expo / Life Pharmacy</div>
+          <p class="plain">Эта сторона везёт в Марину. DMCC не следующая остановка: сначала Sobha Realty.</p>
           <ol>
-            <li class="here"><b>Media City</b><small>пешком от отеля</small></li>
-            <li><b>JLT</b><small>переход на метро DMCC</small></li>
-            <li><b>Dubai Marina Mall</b><small>начало Marina Walk</small></li>
-            <li><b>JBR 1 · JBR 2</b><small>пляж и променад The Walk</small></li>
+            <li class="here"><b>Al Khail / Al Fardan Exchange</b><small>5–7 мин пешком от отеля</small></li>
+            <li><b>Sobha Realty</b><small>1-я остановка · магазин вечером</small></li>
+            <li><b>DMCC</b><small>2-я остановка · переход на трамвай JLT</small></li>
+          </ol>
+        </article>
+        <article class="rail">
+          <div class="rail-label"><span>T1</span> Трамвай от JLT</div>
+          <ol>
+            <li><b>JLT</b><small>сразу у метро DMCC</small></li>
+            <li><b>Dubai Marina Mall</b><small>1 остановка · завтрак, яхта, Marina Walk</small></li>
+            <li><b>JBR 2 · JBR 1</b><small>в другую сторону от JLT · пляж</small></li>
           </ol>
         </article>
         <article class="rail red">
-          <div class="rail-label"><span aria-hidden="true"></span> Метро, красная линия</div>
-          <p class="plain">Садитесь в сторону Centrepoint. Между этими станциями будут и другие остановки.</p>
+          <div class="rail-label"><span aria-hidden="true"></span> В город · Centrepoint</div>
+          <p class="plain">Эта сторона везёт к башне и в старый город. Между станциями будут другие остановки.</p>
           <ol>
-            <li><b>DMCC</b><small>сюда вы выходите с трамвая JLT</small></li>
-            <li><b>Burj Khalifa / Dubai Mall</b><small>День 1</small></li>
-            <li><b>max (Al Jafiliya)</b><small>День 4, Dubai Frame</small></li>
-            <li><b>BurJuman</b><small>пересадка на зелёную</small></li>
-          </ol>
-        </article>
-        <article class="rail green">
-          <div class="rail-label"><span aria-hidden="true"></span> Метро, зелёная линия</div>
-          <p class="plain">На BurJuman садитесь в сторону e&amp; (на старых схемах — Etisalat). Нужная станция следующая.</p>
-          <ol>
-            <li><b>BurJuman</b><small>пересадка с красной</small></li>
-            <li class="here"><b>Sharaf DG</b><small>раньше называлась Al Fahidi · День 2</small></li>
+            <li><b>Al Khail / Al Fardan Exchange</b><small>старт от отеля</small></li>
+            <li><b>Burj Khalifa / Dubai Mall</b><small>вечер 22 декабря, без подъёма</small></li>
+            <li><b>max</b><small>День 4 · Dubai Frame</small></li>
+            <li><b>BurJuman</b><small>пересадка на зелёную, День 2</small></li>
           </ol>
         </article>
         <article class="rail back">
           <div class="rail-label"><span>↩</span> Обратно к отелю</div>
-          <p class="plain">Из центра: красная линия в сторону Life Pharmacy или Expo 2020. Обе ветки проходят DMCC. Выходите на DMCC и садитесь на трамвай до Media City.</p>
-          <p class="plain">Из JBR и Марины метро не нужно: трамвай идёт прямо до Media City.</p>
+          <p class="plain">Из Downtown и из старого города: красная линия в сторону Life Pharmacy или Expo 2020. Выходите на Al Fardan Exchange / Al Khail и идите 5–7 минут до Media One.</p>
+          <p class="plain">Из Марины: трамвай до JLT, метро DMCC в сторону Centrepoint, снова Al Khail. От Sobha Realty до отеля — одна остановка в ту же сторону.</p>
         </article>
       </div>
-      <div class="taxi-row">
-        <article class="taxi">
-          <b>Kite Beach</b>
-          <p>Прямого метро нет. День 3 — на такси. Ориентир водителю: Umm Suqeim, у мечети Al Manara.</p>
-        </article>
-        <article class="taxi">
-          <b>Gate 4</b>
-          <p>Dubai Frame. От метро max пешком 15–20 минут или короткое такси до Ворот 4 парка Zabeel.</p>
-        </article>
-        <article class="taxi">
-          <b>Мечеть Джумейра</b>
-          <p>Ближайшее метро — World Trade Centre, идти около 20 минут. До Jumeirah Beach Road проще на такси.</p>
-        </article>
+      <div class="map-card">
+        <ol class="schematic">
+          <li><b>Отель → метро</b><small>пешком, 5–7 минут</small></li>
+          <li><b>Al Khail → DMCC</b><small>2 остановки к Expo, не выходите на Sobha Realty</small></li>
+          <li><b>Трамвай → Marina Mall</b><small>1 остановка от JLT</small></li>
+        </ol>
+        <div class="map-frame">
+          <iframe title="Маршрут от Media One Hotel до Dubai Marina Mall" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?saddr=Media+One+Hotel+Al+Falak+Street+Dubai&amp;daddr=Dubai+Marina+Mall&amp;dirflg=r&amp;hl=ru&amp;output=embed"></iframe>
+          <a class="map" href="https://www.google.com/maps/dir/?api=1&amp;origin=Media+One+Hotel,+Al+Falak+Street,+Dubai+Media+City&amp;destination=Dubai+Marina+Mall&amp;travelmode=transit" target="_blank" rel="noopener">Маршрут на карте: отель → Marina Mall</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="block" id="plan">
+<section class="block" id="plan">
     <div class="wrap">
       <div class="sec-head">
         <p class="kicker">Четыре дня</p>
@@ -722,7 +762,7 @@
       <div class="overview">
         <a class="ov" href="#day1">
           <img src="images/hero.jpg" alt="Бурдж-Халифа">
-          <div><span>День 1</span><strong>Башня, молл и море JBR</strong><em>214–229 AED</em><small>билет 189 + обед 25–40</small></div>
+          <div><span>День 1 · 22 декабря</span><strong>Яхта, JBR и вечер у башни</strong><em>$50–64</em><small>≈ 4 000–5 120 ₽ на человека</small></div>
         </a>
         <a class="ov" href="#day2">
           <img src="images/fahidi.jpg" alt="Квартал Аль-Фахиди">
@@ -745,85 +785,266 @@
       <div class="day-head">
         <div class="day-no">День 01</div>
         <div>
-          <p class="kicker">Downtown и JBR</p>
-          <h2>Бурдж-Халифа, молл, фонтаны и пляж</h2>
-          <p>Башня и фонтаны стоят в одном месте. Пляж JBR — в другой стороне города, у вашего трамвая.</p>
+          <p class="kicker">22 декабря · прилёт</p>
+          <h2>Яхта, пляж JBR и вечер у башни</h2>
+          <p>На Бурдж-Халифу в этот день не поднимаемся. Багаж остаётся в камере хранения до возвращения с пляжа. Ужин — в отеле, в Ciao Bella.</p>
         </div>
       </div>
       <div class="day-price">
-        <div><b>214–229 AED</b><span>≈ 4&nbsp;810–5&nbsp;150 ₽ · билет и обед</span></div>
+        <div><b>$50–64</b><span>≈ 4 000–5 120 ₽ на человека</span></div>
         <ul>
-          <li>Смотровая 189 AED, фонтаны и пляж JBR бесплатно.</li>
-          <li>Обед в фуд-корте Dubai Mall 25–40 AED.</li>
-          <li>Метро и трамвай входят в общую карту на все дни: 130–150 AED.</li>
+          <li>Дорога $8–12, завтрак $10–15, яхта $27, вода и снеки $5–10.</li>
+          <li>Пляж, прогулка у башни и фонтаны — бесплатно.</li>
+          <li>Трансфер из аэропорта и ужин в отеле в эту сумму не входят.</li>
         </ul>
       </div>
       <div class="flow">
-        <strong>Как сложить день</strong>
-        <p>Центр — одной поездкой: трамвай до JLT, метро DMCC, красная линия в сторону Centrepoint, выход Burj Khalifa / Dubai Mall. Смотровую можно днём, фонтаны — вечером там же. JBR поставьте отдельно: утром до центра или уже после возвращения к отелю. Пешком из молла на этот пляж не попадают.</p>
+        <strong>Весь день одной линией</strong>
+        <p>Аэропорт → Media One → магазин у отеля → метро Al Khail → DMCC → трамвай → Marina Mall → яхта → пешком на JBR → отель и заселение → Marina Walk и магазин у Sobha Realty → ужин в Ciao Bella → метро до Burj Khalifa → фонтаны → метро до Al Khail.</p>
       </div>
+
       <div class="stops">
         <article class="stop">
-          <div class="stop-photo"><img src="images/hero.jpg" alt="Бурдж-Халифа над озером и фонтанами"></div>
+          <div class="stop-photo"><img src="images/hotel.jpg" alt="Media One Hotel в Dubai Media City"></div>
           <div class="stop-body">
-            <div class="idx">01 · СМОТРОВАЯ</div>
-            <h3>Бурдж-Халифа и Dubai Mall</h3>
-            <p class="en" lang="en">Burj Khalifa &amp; Dubai Mall, Downtown Dubai</p>
+            <p class="when">4:45–08:30</p>
+            <h3>Прилёт и камера хранения</h3>
+            <p class="en">Dubai International Airport → Media One Hotel</p>
             <div class="find">
-              <strong>Как найти</strong>
-              <p>Это центр города. От метро идите по крытому переходу в Dubai Mall, заложите 15–20 минут. Вход на смотровую — нижний этаж молла, таблички Lower Ground и At The Top.</p>
+              <strong>Как пройти</strong>
+              <p>Паспортный контроль, багаж, трансфер в отель. В 08:00–08:30 вы на Al Falak Street. Чемоданы оставляете в камере хранения: заселение будет после пляжа, в 14:00.</p>
             </div>
-            <div class="chips">
-              <span class="chip price">189 AED · ≈ 4&nbsp;250 ₽</span>
-              <span class="chip red">Метро · красная · Burj Khalifa / Dubai Mall</span>
-              <span class="chip red">Сторона Centrepoint</span>
+            <div class="map-card">
+              <ol class="schematic">
+                <li><b>Аэропорт DXB</b><small>4:45–08:00</small></li>
+                <li><b>Media One Hotel</b><small>Media 1 Tower, Exit 32</small></li>
+              </ol>
+              <div class="map-frame">
+                <iframe title="Дорога из аэропорта в Media One Hotel" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?saddr=Dubai+International+Airport&amp;daddr=Media+One+Hotel+Al+Falak+Street+Dubai&amp;hl=ru&amp;output=embed"></iframe>
+                <a class="map" href="https://www.google.com/maps/dir/?api=1&amp;origin=Dubai+International+Airport&amp;destination=Media+One+Hotel,+Al+Falak+Street,+Dubai+Media+City&amp;travelmode=driving" target="_blank" rel="noopener">Маршрут: аэропорт → отель</a>
+              </div>
             </div>
-            <a class="map" href="https://www.google.com/maps/search/?api=1&amp;query=Burj+Khalifa+Dubai+Mall" target="_blank" rel="noopener">Карта</a>
           </div>
         </article>
+
         <article class="stop reverse">
-          <div class="stop-photo"><img src="images/jbr.jpg" alt="Пляж и променад JBR"></div>
+          <div class="stop-photo"><img src="images/metro.jpg" alt="Станция дубайского метро днём"></div>
           <div class="stop-body">
-            <div class="idx">02 · ПЛЯЖ</div>
-            <h3>Пляж JBR</h3>
-            <p class="en" lang="en">The Beach, Jumeirah Beach Residence</p>
-            <p class="addr">The Beach — Dubai Marina — Jumeirah Beach Residence — Dubai.</p>
+            <p class="when">08:30–09:15</p>
+            <h3>Вода, снеки и дорога на завтрак</h3>
+            <p class="en">Bake Mart Plus → Le Pain Quotidien, Dubai Marina Mall</p>
             <div class="find">
-              <strong>Как найти</strong>
-              <p>Пляжная полоса вдоль променада The Walk. От отеля пешком на трамвай Media City, выходите на JBR 1 или JBR 2. Море будет со стороны променада.</p>
+              <strong>Магазин</strong>
+              <p>Bake Mart Plus в здании Al Thuraya Building, около 190 метров от отеля, круглосуточно. Возьмите большие бутылки воды, фрукты и лёгкие снеки. Бюджет $5–10 (≈ 400–800 ₽).</p>
             </div>
-            <div class="chips">
-              <span class="chip free">Бесплатно</span>
-              <span class="chip tram">Трамвай T1 · JBR 1 или JBR 2</span>
-              <span class="chip walk">Дальше пешком по The Walk</span>
+            <div class="map-card">
+              <ol class="schematic">
+                <li><b>Отель</b><small>старт в 08:30</small></li>
+                <li><b>Bake Mart Plus</b><small>Al Thuraya Building, ~190 м</small></li>
+              </ol>
+              <div class="map-frame">
+                <iframe title="Пешком от отеля до Bake Mart Plus" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?saddr=Media+One+Hotel+Al+Falak+Street+Dubai&amp;daddr=Bake+Mart+Plus+Al+Thuraya+Building+Dubai+Media+City&amp;dirflg=w&amp;hl=ru&amp;output=embed"></iframe>
+                <a class="map" href="https://www.google.com/maps/dir/?api=1&amp;origin=Media+One+Hotel,+Al+Falak+Street,+Dubai&amp;destination=Bake+Mart+Plus,+Al+Thuraya+Building,+Dubai+Media+City&amp;travelmode=walking" target="_blank" rel="noopener">Маршрут: отель → магазин</a>
+              </div>
             </div>
-            <a class="map" href="https://www.google.com/maps/search/?api=1&amp;query=The+Beach+JBR+Dubai" target="_blank" rel="noopener">Карта</a>
+            <div class="find">
+              <strong>Дальше на завтрак, 08:45–09:15</strong>
+              <p>Пешком до метро 5–7 минут. Красная линия в сторону Life Pharmacy или Expo: первая остановка Sobha Realty, вторая — DMCC. Не выходите раньше. С DMCC переходите на трамвай JLT и едете одну остановку до Dubai Marina Mall. В другую сторону трамвай идёт на JBR — это пляж, он будет после яхты. В пути 20–25 минут, с картой Nol $2–4 (≈ 160–320 ₽).</p>
+            </div>
+            <div class="map-card">
+              <ol class="schematic">
+                <li><b>Al Khail / Al Fardan Exchange</b><small>пешком от отеля</small></li>
+                <li><b>Sobha Realty</b><small>проезжаете мимо</small></li>
+                <li><b>DMCC → трамвай JLT</b><small>здесь пересадка</small></li>
+                <li><b>Dubai Marina Mall</b><small>1 остановка на трамвае</small></li>
+              </ol>
+              <div class="map-frame">
+                <iframe title="Общественный транспорт от отеля до Dubai Marina Mall" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?saddr=Al+Fardan+Exchange+Metro+Station+Dubai&amp;daddr=Dubai+Marina+Mall&amp;dirflg=r&amp;hl=ru&amp;output=embed"></iframe>
+                <a class="map" href="https://www.google.com/maps/dir/?api=1&amp;origin=Al+Fardan+Exchange+Metro+Station,+Dubai&amp;destination=Dubai+Marina+Mall&amp;travelmode=transit" target="_blank" rel="noopener">Маршрут: метро → Marina Mall</a>
+              </div>
+            </div>
           </div>
         </article>
+
         <article class="stop">
-          <div class="stop-photo"><img src="images/fountains.jpg" alt="Ночное шоу фонтанов у Бурдж-Халифы"></div>
+          <div class="stop-photo"><img src="images/breakfast.jpg" alt="Завтрак на террасе у воды в Марине"></div>
           <div class="stop-body">
-            <div class="idx">03 · ВЕЧЕР</div>
-            <h3>Шоу фонтанов</h3>
-            <p class="en" lang="en">Dubai Fountain, Souk Al Bahar</p>
+            <p class="when">09:15–10:00</p>
+            <h3>Завтрак в Le Pain Quotidien</h3>
+            <p class="en">Ground Level, Dubai Marina Mall, promenade level</p>
             <div class="find">
               <strong>Как найти</strong>
-              <p>Фонтан у подножия Бурдж-Халифы, рядом с Dubai Mall. Бесплатная точка с видом — терраса Souk Al Bahar. Это тот же район, что и смотровая: останьтесь к вечеру или вернитесь сюда, а не езжайте «после JBR» как на новую точку.</p>
+              <p>Кафе на нижнем, променадном уровне Dubai Marina Mall, у воды. На двоих около 100 AED (≈ $27 / 2 160 ₽). На человека выходит $10–15 (≈ 800–1 200 ₽).</p>
             </div>
             <div class="chips">
-              <span class="chip free">Бесплатно</span>
-              <span class="chip red">Та же станция Burj Khalifa / Dubai Mall</span>
-              <span class="chip walk">Терраса Souk Al Bahar</span>
+              <span class="chip price">$10–15 с человека</span>
+              <span class="chip walk">Променад-уровень молла</span>
             </div>
-            <a class="map" href="https://www.google.com/maps/search/?api=1&amp;query=Souk+Al+Bahar+Dubai+Fountain" target="_blank" rel="noopener">Карта</a>
+            <a class="map" href="https://www.google.com/maps/search/?api=1&amp;query=Le+Pain+Quotidien+Dubai+Marina+Mall" target="_blank" rel="noopener">Кафе на карте</a>
+          </div>
+        </article>
+
+        <article class="stop reverse">
+          <div class="stop-photo"><img src="images/yacht.jpg" alt="Вид с яхты на JBR и колесо Ain Dubai"></div>
+          <div class="stop-body">
+            <p class="when">10:00–12:00</p>
+            <h3>Час на яхте</h3>
+            <p class="en">Marina Walk pier, by Dubai Marina Mall</p>
+            <div class="find">
+              <strong>Откуда и куда идёт лодка</strong>
+              <p>Причал у Dubai Marina Mall и Marina Walk. Яхта проходит канал Марины и выходит в залив: с воды видны JBR, Bluewaters и колесо Ain Dubai. Час на воде, с запасом на посадку заложены два часа. От $27 (≈ 2 160 ₽) с человека.</p>
+            </div>
+            <div class="chips"><span class="chip price">от $27 · 1 час</span></div>
+            <a class="map" href="https://www.google.com/maps/search/?api=1&amp;query=Dubai+Marina+Walk+yacht+pier+Dubai+Marina+Mall" target="_blank" rel="noopener">Причал на карте</a>
+          </div>
+        </article>
+
+        <article class="stop">
+          <div class="stop-photo"><img src="images/jbr-real.jpg" alt="Пляж JBR и бирюзовая вода"></div>
+          <div class="stop-body">
+            <p class="when">12:00–13:30</p>
+            <h3>Пляж JBR</h3>
+            <p class="en">Jumeirah Beach Residence public beach</p>
+            <div class="find">
+              <strong>Как найти</strong>
+              <p>От причала пешком 15–20 минут вдоль моря. Вход бесплатный. На пляже есть бесплатные раздевалки, туалеты и души. В отдельных зонах душ может работать по жетону около 5 AED. Купание с 12:30 до 13:30.</p>
+            </div>
+            <div class="map-card">
+              <ol class="schematic">
+                <li><b>Причал у Marina Mall</b><small>12:00, после яхты</small></li>
+                <li><b>Пляж JBR</b><small>15–20 минут пешком</small></li>
+              </ol>
+              <div class="map-frame">
+                <iframe title="Пешком от Dubai Marina Mall до пляжа JBR" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?saddr=Dubai+Marina+Mall&amp;daddr=JBR+Beach+Dubai&amp;dirflg=w&amp;hl=ru&amp;output=embed"></iframe>
+                <a class="map" href="https://www.google.com/maps/dir/?api=1&amp;origin=Dubai+Marina+Mall&amp;destination=JBR+Beach,+Dubai&amp;travelmode=walking" target="_blank" rel="noopener">Маршрут: причал → пляж</a>
+              </div>
+            </div>
+            <div class="chips"><span class="chip free">Вход бесплатно</span></div>
+          </div>
+        </article>
+
+        <article class="stop reverse">
+          <div class="stop-photo"><img src="images/hotel.jpg" alt="Отель, куда возвращаетесь заселяться"></div>
+          <div class="stop-body">
+            <p class="when">13:30–15:00</p>
+            <h3>Назад в отель и заселение</h3>
+            <div class="find">
+              <strong>Как вернуться</strong>
+              <p>С пляжа на трамвай JBR до JLT. Дальше метро DMCC в сторону Centrepoint и выход на Al Khail / Al Fardan Exchange. От станции 5–7 минут пешком до Media One. В 14:00–15:00 заселение и отдых.</p>
+            </div>
+            <div class="map-card">
+              <ol class="schematic">
+                <li><b>JBR</b><small>трамвай до JLT</small></li>
+                <li><b>DMCC</b><small>метро в сторону Centrepoint</small></li>
+                <li><b>Al Khail</b><small>пешком до отеля</small></li>
+              </ol>
+              <div class="map-frame">
+                <iframe title="Обратно с пляжа JBR в Media One Hotel" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?saddr=JBR+Beach+Dubai&amp;daddr=Media+One+Hotel+Al+Falak+Street+Dubai&amp;dirflg=r&amp;hl=ru&amp;output=embed"></iframe>
+                <a class="map" href="https://www.google.com/maps/dir/?api=1&amp;origin=JBR+Beach,+Dubai&amp;destination=Media+One+Hotel,+Al+Falak+Street,+Dubai&amp;travelmode=transit" target="_blank" rel="noopener">Маршрут: JBR → отель</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="stop">
+          <div class="stop-photo"><img src="images/marina-real.jpg" alt="Набережная Marina Walk вечером"></div>
+          <div class="stop-body">
+            <p class="when">15:00–17:45</p>
+            <h3>Marina Walk и магазин у Sobha Realty</h3>
+            <p class="en">African + Eastern, JLT 1, near Tiffany Tower</p>
+            <div class="find">
+              <strong>Как идти</strong>
+              <p>Из отеля идите в сторону Dubai Marina Mall: там начинается Marina Walk. Набережная ведёт в сторону JLT, к магазину African + Eastern. Он рядом с башней Tiffany Tower и метро Sobha Realty. Возьмите паспорт: временную лицензию оформят на месте. Потом возвращайтесь в номер, чтобы собраться к ужину. С 16:15 до 17:45 — отдых.</p>
+            </div>
+            <div class="map-card">
+              <ol class="schematic">
+                <li><b>Media One</b><small>пешком к Marina Mall</small></li>
+                <li><b>Marina Walk</b><small>в сторону JLT</small></li>
+                <li><b>African + Eastern</b><small>JLT 1, Tiffany Tower</small></li>
+              </ol>
+              <div class="map-frame">
+                <iframe title="Пешком по Marina Walk до магазина в JLT" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?saddr=Media+One+Hotel+Dubai&amp;daddr=Dubai+Marina+Mall+to:African+and+Eastern+JLT+Dubai&amp;dirflg=w&amp;hl=ru&amp;output=embed"></iframe>
+                <a class="map" href="https://www.google.com/maps/dir/?api=1&amp;origin=Media+One+Hotel,+Dubai+Media+City&amp;destination=African+and+Eastern,+JLT,+Dubai&amp;waypoints=Dubai+Marina+Mall&amp;travelmode=walking" target="_blank" rel="noopener">Маршрут: отель → Marina Walk → магазин</a>
+              </div>
+            </div>
+            <div class="map-card">
+              <ol class="schematic">
+                <li><b>Метро Sobha Realty</b><small>у магазина</small></li>
+                <li><b>Al Khail</b><small>1 остановка в сторону Centrepoint</small></li>
+                <li><b>Отель</b><small>или такси $3–5 / 240–400 ₽</small></li>
+              </ol>
+              <div class="map-frame">
+                <iframe title="Одна остановка от Sobha Realty до Al Khail" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?saddr=Sobha+Realty+Metro+Station+Dubai&amp;daddr=Al+Fardan+Exchange+Metro+Station+Dubai&amp;dirflg=r&amp;hl=ru&amp;output=embed"></iframe>
+                <a class="map" href="https://www.google.com/maps/dir/?api=1&amp;origin=Sobha+Realty+Metro+Station,+Dubai&amp;destination=Al+Fardan+Exchange+Metro+Station,+Dubai&amp;travelmode=transit" target="_blank" rel="noopener">Маршрут: Sobha Realty → отель</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="stop reverse">
+          <div class="stop-photo"><img src="images/burj-night.jpg" alt="Бурдж-Халифа и фонтаны ночью"></div>
+          <div class="stop-body">
+            <p class="when">18:00–22:00</p>
+            <h3>Ужин, башня и фонтаны</h3>
+            <p class="en">Ciao Bella, затем Burj Khalifa / Dubai Mall</p>
+            <div class="find">
+              <strong>Ужин в отеле, 18:00–19:00</strong>
+              <p>Ресторан Ciao Bella, итальянская кухня, в Media One Hotel.</p>
+            </div>
+            <div class="find">
+              <strong>Downtown, 19:00–19:40</strong>
+              <p>Пешком до Al Khail и красная линия в сторону Centrepoint до Burj Khalifa / Dubai Mall. Около 30–35 минут, $2–3 (≈ 160–240 ₽). На башню не поднимаемся: в 19:40–20:30 гуляете у подножия и по Dubai Mall Waterfront Promenade. Подсветка башни хорошо берётся на фото.</p>
+            </div>
+            <div class="map-card">
+              <ol class="schematic">
+                <li><b>Al Khail</b><small>пешком от отеля</small></li>
+                <li><b>Сторона Centrepoint</b><small>не в сторону Expo</small></li>
+                <li><b>Burj Khalifa / Dubai Mall</b><small>выход к подножию башни</small></li>
+              </ol>
+              <div class="map-frame">
+                <iframe title="Метро от Al Khail до Бурдж-Халифы" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?saddr=Al+Fardan+Exchange+Metro+Station+Dubai&amp;daddr=Burj+Khalifa+Dubai+Mall+Metro+Station&amp;dirflg=r&amp;hl=ru&amp;output=embed"></iframe>
+                <a class="map" href="https://www.google.com/maps/dir/?api=1&amp;origin=Al+Fardan+Exchange+Metro+Station,+Dubai&amp;destination=Burj+Khalifa+/+Dubai+Mall+Metro+Station&amp;travelmode=transit" target="_blank" rel="noopener">Маршрут: отель → Бурдж-Халифа</a>
+              </div>
+            </div>
+            <div class="find">
+              <strong>Фонтаны, 20:30–21:00</strong>
+              <p>Dubai Fountain идёт каждые 30 минут с 18:00 до 23:00, само шоу около 5 минут. Бесплатно смотреть с моста у Souk Al Bahar или из Burj Park рядом с башней.</p>
+            </div>
+            <div class="chips">
+              <span class="chip free">Подъёма на башню нет</span>
+              <span class="chip free">Фонтаны бесплатно</span>
+            </div>
+            <div class="map-card">
+              <ol class="schematic">
+                <li><b>Burj Khalifa / Dubai Mall</b><small>21:00</small></li>
+                <li><b>Сторона Life Pharmacy / Expo</b><small>обратно к морю</small></li>
+                <li><b>Al Khail → отель</b><small>к 21:45, отдых в 22:00</small></li>
+              </ol>
+              <div class="map-frame">
+                <iframe title="Обратно от Бурдж-Халифы до Al Khail" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?saddr=Burj+Khalifa+Dubai+Mall+Metro+Station&amp;daddr=Al+Fardan+Exchange+Metro+Station+Dubai&amp;dirflg=r&amp;hl=ru&amp;output=embed"></iframe>
+                <a class="map" href="https://www.google.com/maps/dir/?api=1&amp;origin=Burj+Khalifa+/+Dubai+Mall+Metro+Station&amp;destination=Al+Fardan+Exchange+Metro+Station,+Dubai&amp;travelmode=transit" target="_blank" rel="noopener">Маршрут: башня → отель</a>
+              </div>
+            </div>
           </div>
         </article>
       </div>
-      <p class="home-line">Домой из Downtown: красная линия в сторону Life Pharmacy или Expo 2020 до DMCC, затем трамвай до Media City. Из JBR — сразу трамвай до Media City.</p>
+
+      <div class="receipt" style="margin-top:18px">
+        <p class="kicker">Бюджет дня 1 · на человека</p>
+        <h3>Без трансфера и без ужина в отеле</h3>
+        <ol>
+          <li><div><b>Метро, трамвай и дорога от магазина</b><small>Nol, утро и вечер до Downtown</small></div><div>$8–12<small>≈ 640–960 ₽</small></div></li>
+          <li><div><b>Завтрак в Le Pain Quotidien</b><small>на двоих около 100 AED</small></div><div>$10–15<small>≈ 800–1 200 ₽</small></div></li>
+          <li><div><b>Яхта, 1 час</b><small>Марина и залив</small></div><div>$27<small>≈ 2 160 ₽</small></div></li>
+          <li><div><b>Вода и снеки</b><small>Bake Mart Plus</small></div><div>$5–10<small>≈ 400–800 ₽</small></div></li>
+        </ol>
+        <div class="sum"><span>Итого</span><span>$50–64</span></div>
+        <p class="en">≈ 4 000–5 120 ₽. Курс в этой смете: около 80 ₽ за $1.</p>
+      </div>
     </div>
   </section>
 
-  <section class="block day" id="day2">
+<section class="block day" id="day2">
     <div class="wrap">
       <div class="day-head">
         <div class="day-no">День 02</div>
@@ -843,7 +1064,7 @@
       </div>
       <div class="flow">
         <strong>Как сложить день</strong>
-        <p>Красная линия до BurJuman, пересадка на зелёную в сторону e&amp;. Выходите на следующей станции — Sharaf DG. По указателям идите в исторический район Аль-Фахиди. Рынки в Дейре — через абру за 1 AED. Al Seef идите пешком до лодки или после возвращения: набережная на той же стороне, что и квартал.</p>
+        <p>От Media One пешком до метро Al Khail / Al Fardan Exchange. Красная линия в сторону Centrepoint до BurJuman, пересадка на зелёную в сторону e&amp;. Выходите на следующей станции — Sharaf DG. По указателям идите в исторический район Аль-Фахиди. Рынки в Дейре — через абру за 1 AED. Al Seef идите пешком до лодки или после возвращения: набережная на той же стороне, что и квартал.</p>
       </div>
       <div class="stops">
         <article class="stop">
@@ -901,7 +1122,7 @@
           </div>
         </article>
       </div>
-      <p class="home-line">Домой: абра обратно на сторону Аль-Фахиди, если вы на рынках. Дальше зелёная линия в сторону Creek — одна остановка до BurJuman, затем красная в сторону Life Pharmacy или Expo до DMCC и трамвай до Media City.</p>
+      <p class="home-line">Домой: абра обратно на сторону Аль-Фахиди, если вы на рынках. Дальше зелёная линия в сторону Creek — одна остановка до BurJuman, затем красная в сторону Life Pharmacy или Expo. Выходите на Al Khail / Al Fardan Exchange и идите 5–7 минут до Media One Hotel.</p>
     </div>
   </section>
 
@@ -925,7 +1146,7 @@
       </div>
       <div class="flow">
         <strong>Как сложить день</strong>
-        <p>Марину и JBR удобно смотреть от отеля на трамвае. Kite Beach стоит дальше по побережью, у Umm Suqeim: прямого метро нет, берите такси. Ravi Restaurant — в районе Al Satwa, это третий адрес. Если не хотите отдельный крюк, обед замените на Operation: Falafel в JBR.</p>
+        <p>До Марины и JBR от Media One: пешком до метро Al Khail / Al Fardan Exchange, красная линия в сторону Expo до DMCC (вторая остановка, Sobha Realty проезжаете), затем трамвай. Kite Beach по-прежнему на такси, прямого метро нет. Ravi — в Al Satwa, это отдельный адрес. Если не хотите крюк, обед замените на Operation: Falafel в JBR.</p>
       </div>
       <div class="stops">
         <article class="stop">
@@ -964,7 +1185,7 @@
           </div>
         </article>
       </div>
-      <p class="home-line">Домой из Марины и JBR: трамвай до Media City. С Kite Beach — такси до отеля или до ближайшей удобной вам точки у трамвая.</p>
+      <p class="home-line">Домой из Марины и JBR: трамвай до JLT, метро DMCC в сторону Centrepoint, выход Al Khail / Al Fardan Exchange, 5–7 минут пешком до Media One. С Kite Beach — такси до отеля.</p>
     </div>
   </section>
 
@@ -988,7 +1209,7 @@
       </div>
       <div class="flow">
         <strong>Как сложить день</strong>
-        <p>Утром красная линия в сторону Centrepoint до станции max. Вход в Dubai Frame только через Gate 4. Затем такси на Jumeirah Beach Road: сначала мечеть напротив Palm Strip Mall, потом общественный пляж у Burj Al Arab. Это другой пляж, не Kite Beach из третьего дня.</p>
+        <p>От Al Khail красная линия в сторону Centrepoint до станции max. Вход в Dubai Frame только через Gate 4. Затем такси на Jumeirah Beach Road: сначала мечеть напротив Palm Strip Mall, потом общественный пляж у Burj Al Arab. Это другой пляж, не Kite Beach из третьего дня.</p>
       </div>
       <div class="stops">
         <article class="stop">
@@ -1050,7 +1271,7 @@
           </div>
         </article>
       </div>
-      <p class="home-line">Домой с побережья Джумейры — на такси до Arjaan by Rotana, Dubai Media City, либо до трамвая Media City, если так удобнее по цене в приложении.</p>
+      <p class="home-line">Домой с побережья Джумейры — на такси до Media One Hotel, Al Falak Street, Dubai Media City. Водителю: Media 1 Tower, Exit 32.</p>
     </div>
   </section>
 
@@ -1172,7 +1393,7 @@
       <div class="sec-head">
         <p class="kicker">На одного человека</p>
         <h2>Вся поездка в двух суммах</h2>
-        <p>Левая колонка — карта Nol и поездки на трамвае и метро. Правая — ваш же расчёт «с такси»: он выше всего на 0–15 AED.</p>
+        <p>День 1, 22 декабря, считается отдельно: $50–64 на человека, без подъёма на Бурдж-Халифу. Нижняя таблица — прежний расчёт остальных дней и старый билет на смотровую. Его в новый первый день не закладывайте.</p>
       </div>
       <div class="totals">
         <article class="total">
@@ -1242,20 +1463,20 @@
       <div class="pocket">
         <article>
           <span>День 1</span>
-          <h3>Центр и JBR</h3>
+          <h3>22 декабря</h3>
           <ul>
-            <li>Красная линия, сторона Centrepoint, станция Burj Khalifa / Dubai Mall.</li>
-            <li>Смотровая: Lower Ground, Dubai Mall.</li>
-            <li>Фонтаны вечером с террасы Souk Al Bahar.</li>
-            <li>Пляж отдельно: трамвай JBR 1 или JBR 2.</li>
-            <li>На день: 214–229 AED, обед в молле 25–40 AED.</li>
+            <li>Отель: Media One, Al Falak St. Метро Al Khail / Al Fardan Exchange, 5–7 мин.</li>
+            <li>Утро: Bake Mart, потом метро до DMCC (2-я остановка) и трамвай до Marina Mall.</li>
+            <li>Завтрак Le Pain Quotidien, яхта 1 час, пешком на пляж JBR.</li>
+            <li>Вечером ужин в Ciao Bella, метро в сторону Centrepoint до башни, фонтаны бесплатно. Наверх не идём.</li>
+            <li>На человека $50–64, без трансфера и без ужина в отеле.</li>
           </ul>
         </article>
         <article>
           <span>День 2</span>
           <h3>Старый город</h3>
           <ul>
-            <li>BurJuman, зелёная в сторону e&amp;, станция Sharaf DG.</li>
+            <li>От отеля: Al Khail, красная в сторону Centrepoint до BurJuman, затем зелёная в сторону e&amp;, станция Sharaf DG.</li>
             <li>Абра 1 AED на рынки Дейры.</li>
             <li>Al Seef пешком вдоль ручья у Аль-Фахиди.</li>
             <li>На день: 6–13 AED. Перекус на рынке 5–12 AED.</li>
